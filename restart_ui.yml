@@ -7,4 +7,4 @@
   - name: Restart UI
     shell: docker-compose restart ui
     args:
-      chdir: ~/docker
+      chdir: /home/ubuntu/docker
