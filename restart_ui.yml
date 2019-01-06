@@ -1,1 +1,8 @@
-
+---
+- name: Restart UI service
+  hosts: all
+  become: yes
+  
+  tasks:
+  - name: Restart UI
+      shell: cd ~/docker && docker-compose restart ui
