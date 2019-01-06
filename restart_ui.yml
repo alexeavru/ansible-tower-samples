@@ -5,4 +5,6 @@
   
   tasks:
   - name: Restart UI
-      shell: cd ~/docker && docker-compose restart ui
+    shell: docker-compose restart ui
+    args:
+      chdir: ~/docker
